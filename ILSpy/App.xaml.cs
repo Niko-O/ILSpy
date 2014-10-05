@@ -58,7 +58,7 @@ namespace ICSharpCode.ILSpy
 		{
 			var cmdArgs = Environment.GetCommandLineArgs().Skip(1);
 			App.CommandLineArguments = new CommandLineArguments(cmdArgs);
-			if (App.CommandLineArguments.SingleInstance ?? true) {
+			if (App.CommandLineArguments.SingleInstance ?? false) {
 				cmdArgs = cmdArgs.Select(FullyQualifyPath);
 				string message = string.Join(Environment.NewLine, cmdArgs);
 				if (SendToPreviousInstance("ILSpy:\r\n" + message, !App.CommandLineArguments.NoActivate)) {
