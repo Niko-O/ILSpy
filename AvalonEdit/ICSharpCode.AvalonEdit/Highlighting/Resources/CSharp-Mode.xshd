@@ -207,16 +207,19 @@
 			<Word>ushort</Word>
 			<Word>ulong</Word>
 		</Keywords>
-		
-		<Keywords color="ReferenceTypeKeywords">
-			<Word>class</Word>
-			<Word>interface</Word>
-			<Word>delegate</Word>
-			<Word>object</Word>
-			<Word>string</Word>
-			<Word>void</Word>
-		</Keywords>
-		
+
+	        <Keywords color="ReferenceTypes">
+		            <Word>object</Word>
+		            <Word>string</Word>
+		            <Word>void</Word>
+	        </Keywords>
+	
+	        <Keywords color="ReferenceTypeKeywords">
+		            <Word>class</Word>
+		            <Word>interface</Word>
+		            <Word>delegate</Word>
+	        </Keywords>
+
 		<Keywords color="OperatorKeywords">
 			<Word>explicit</Word>
 			<Word>implicit</Word>
